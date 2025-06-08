@@ -1,4 +1,6 @@
 import './App.css'
+import { useEffect, useState } from 'react';
+import { fetchData } from './api';
 import Header from './components/Header'
 import Home from './components/Home'
 import User_Home from './components/User_Home'
@@ -18,6 +20,12 @@ import Searched_Page from './components/Search_Page'
 import Dashboard from './components/Dashboard'
 
 function App() {
+
+  const [data, setData] = useState([]);
+
+   useEffect(() => {
+    fetchData().then(setData);
+  }, []);
 
   const router = createBrowserRouter([
     {
@@ -81,6 +89,8 @@ function App() {
   return (
     <>
       <RouterProvider router={router}/>
+      <h1>Data from Backend:</h1>
+      <pre>{JSON.stringify(data, null, 2)}</pre>
     </>
   )
 }
