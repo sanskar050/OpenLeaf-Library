@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+* {
+  font-family: 'fredoka', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url(https://img.freepik.com/free-photo/large-collection-old-books-wooden-shelves-generated-by-ai_188544-29739.jpg?t=st=1745563092~exp=1745566692~hmac=634314c446b1d21e17daedefe5f44dc9567e38f322b6129f620beec890d9b95e&w=740);
+  opacity: .9;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  transition: .2s ease-in-out
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.No-Underline:hover {
+  text-decoration: none;
+}
+
+.intro {
+  font-size: larger;
+  text-align: center;
+  width: 75vw;
+  margin: 0 auto;
+  padding: 10px;
+  color: rgb(0, 51, 255);;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+.divider {
+  border: 1px solid grey;
+  width: 93.5%;
+  margin: auto;
+}
+
+.searchPageBook {
+  height: 60vh;
+  display: flex;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  gap: 100px;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media screen and (max-width: 720px) {
+  .intro {
+    width: 90%;
+    font-size: medium;
+    border-radius: 0;
+    padding: 15px 5px;
+    background-color: aliceblue;
+  }
+}

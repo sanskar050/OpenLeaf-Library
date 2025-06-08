@@ -1,0 +1,67 @@
+.register {
+    border: .5px solid grey;
+    border-radius: 10px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.register > h1 {
+    margin-bottom: 40px;
+    color: rgb(20, 183, 188);
+}
+
+.createAccount {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.register > div {
+    margin-bottom: 20px;
+}
+
+.register span {
+    color: blue;
+}
+
+.passwordSuggestion {
+    text-align: start;
+    color: blue;
+    text-decoration: none;
+}
+
+.createAccount {
+    cursor: pointer;
+    font-size: large;
+    padding: 10px 25px;
+    background-color: cadetblue;
+    color: black;
+    transition: .25s ease-in;
+    width: 100%;
+    font-size: large;
+    margin: 25px 0;
+}
+
+.createAccount:hover {
+    color: white;
+    background-color: rgb(46, 196, 201);    
+}
+
+@media screen and (max-width: 720px) {
+    .register {
+        width: 90%;
+        margin-top: 0;
+        border-radius: 0;
+        height: 65vh;
+        justify-content: flex-start;
+    }
+    .register > h1 {
+        margin-top: 40px;
+    }
+}

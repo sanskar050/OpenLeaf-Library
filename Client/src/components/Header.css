@@ -1,0 +1,166 @@
+.header {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: aliceblue;
+    z-index: 1;
+}
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 1px;
+    padding: 6px 0;
+}
+
+.logoAndName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.logoAndName > img {
+    height: 60px;
+}
+
+.libraryName > div {
+    text-align: start;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+
+.searchBar > div {
+    position: relative;
+}
+
+.searchArea {
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0 20px;
+    font-size: large;
+}
+
+.searchIcon {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    border-radius: 20px;   
+    background-color: rgb(225, 149, 48);
+    padding: 0;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.searchIcon > img {
+    height: 25px;
+    background-color: antiquewhite;
+}
+
+.navbar {
+    background-color: rgb(65, 65, 65);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    width: 100%;
+    height: 40px;
+}
+
+.lists {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 0 25px;
+}
+
+.lists li, .login li {
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    transition: .2s ease-in;
+    font-size: large;
+}
+
+.login {
+    padding-right: 20px;
+}
+
+.lists li:hover, .login li:hover {
+    background-color: rgb(90, 90, 90);
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.navFocus {
+    background-color: rgb(90, 90, 90);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        width: 100vw;
+    }
+    .mainHeader {
+        flex-direction: column;
+    }
+    .logoAndName {
+        margin-bottom: 10px;
+        justify-content: space-around;
+    }
+    .searchBar {
+        margin:  auto;
+    }
+    .searchArea {
+        width: 300px;
+    }
+    .navbar {
+        gap: 12px;
+        justify-content: center;
+    }
+    .lists {
+        gap: 12px;
+        margin: 0;
+        padding-right: 2px;
+    }
+    .lists li, .login li {
+        font-size: medium;
+    }
+    .login {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 719px) and (min-width: 400px) {
+    .searchArea {
+        width: 350px;
+    }
+}

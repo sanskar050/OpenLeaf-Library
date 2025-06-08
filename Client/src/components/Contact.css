@@ -1,0 +1,57 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-aqua {
+    background-color: aqua;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactOptions {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: aliceblue;
+    margin: 100px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.phoneDiv, .emailDiv {
+    height: 25vh;
+    width: 20vw;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.phoneTitle, .emailTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone, .email {
+    text-align: center;
+    font-size: large;
+}
+
+.phoneTitle > img, .emailTitle > img {
+    height: 30px;
+}
+
+@media screen and (max-width: 720px) {
+    .contactOptions {
+        margin: 0;
+        border-radius: 0;
+        flex-direction: column;
+        height: 42vh;
+    }
+    .phoneDiv, .emailDiv {
+        width: 80vw;
+        height: 15vh;
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,103 @@
+.admin_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0 50px;
+}
+
+.admin_dashboard {
+    font-size: 30px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin_profile {
+    height: 40px;
+    cursor: pointer;
+}
+
+.admin_name {
+    font-size: 25px;
+}
+
+.admin_boxes {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+    border: 1px solid grey;
+    height: 25vh;
+    width: 20vw;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box1 {
+    background-color: rgba(41, 153, 201, 0.729);
+}
+
+.box2 {
+    background-color: rgba(13, 211, 89, 0.729);
+}
+
+.box3 {
+    background-color: rgba(255, 60, 0, 0.729);
+}
+
+.book_icon,
+.team_icon,
+.magazine_icon {
+    height: 150px;
+}
+
+@media screen and (max-width: 720px) {
+    .admin_header {
+        padding: 0 10px;
+    }
+
+    .admin_dashboard {
+        font-size: 18px;
+    }
+
+    .admin_name {
+        font-size: 16px;
+    }
+
+    .profile {
+        gap: 0;
+    }
+
+    .admin_profile {
+        height: 25px;
+    }
+
+    .admin_boxes {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 60px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .book_icon,
+    .team_icon,
+    .magazine_icon {
+        height: 100px;
+    }
+}
