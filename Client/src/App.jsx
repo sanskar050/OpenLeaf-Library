@@ -89,8 +89,6 @@ function App() {
   return (
     <>
       <RouterProvider router={router}/>
-      <h1>Data from Backend:</h1>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
     </>
   )
 }
